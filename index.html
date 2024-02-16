@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!-- header -->
+    <!-- navbar -->
+    <div class="navbar bg-base-200 container">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Travel</a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+      </div>
+    <!-- navbar end -->
+    <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="./images/banner.png" class=" rounded-lg" />
+          <div>
+            <h1 class="text-6xl font-bold">Let's Travel </h1>
+            <p class="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita quae <br> eum temporibus tenetur porro commodi doloribus omnis explicabo vero?</p>
+            <h3 class="text-3xl">Total Budget: 300 $</h3>
+          </div>
+        </div>
+      </div>
+    <!-- header end -->
+    <!-- main part -->
+      <section class="flex flex-col gap-4 md:flex-row lg:flex-row m-4 md:m-8 lg:m-12" >
+        <!-- card area -->
+        <div class="grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+            <!-- card 1 -->
+            <div class="card card-compact cursor-pointer w-[300px] bg-base-100 shadow-xl">
+                <figure><img src="./images/shajek.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shajek</h2>
+                  <p>Cost: 300 $</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn btn-active btn-accent text-white">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            <!-- card 2 -->
+            <div class="card card-compact cursor-pointer w-[300px] bg-base-100 shadow-xl">
+                <figure><img src="./images/Dhaka.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Dhaka</h2>
+                  <p>Cost: 300 $ </p>
+                  <div class="card-actions justify-start">
+                    <button class="btn btn-active btn-accent text-white">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            <!-- card 3 -->
+            <div class="card card-compact cursor-pointer w-[300px] bg-base-100 shadow-xl">
+                <figure><img src="./images/shundar-ban.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Khulna</h2>
+                  <p>Cost: 500 $</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn btn-active btn-accent text-white">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            <!-- card 4 -->
+            <div class="card card-compact cursor-pointer w-[300px] bg-base-100 shadow-xl">
+                <figure><img src="./images/coxBazar.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Cox Bazar</h2>
+                  <p>Cost: 500 $</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn btn-active btn-accent text-white">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <!-- calculate area -->
+            <h1 class="text-2xl font-bold">Cart</h1>
+            <hr>
+            <div id="tour-list">
+                <!-- tour list -->
+            </div>
+            <hr>
+            <div>
+                <h2 class="text-2xl font-bold">Total cost: <span id="total-cost"></span> $</h2>
+            </div>
+        </div>
+      </section>
+    <!-- main part end -->
+
+    <script src="./script.js"></script>
+</body>
+</html>
